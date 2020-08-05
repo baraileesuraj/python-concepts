@@ -1,5 +1,5 @@
 class Students:
-
+    ''' Create class student with name and password'''
     def __init__(self,name,password):
         self.name=name
         self.__password=password
@@ -7,12 +7,14 @@ class Students:
         return self.__password
 
 class Additional(Students):
+    '''Class Additional  with language attribute extending Students.'''
     def __init__(self,name,password,language):
         super().__init__(name,password)
         self.language=language
 
 class MoreData(Additional,Students):
-     def __init__(self,name,password,language,address):
+    '''Class MoreData with address attribute extending Additional and Students class'''
+    def __init__(self,name,password,language,address):
          Additional.__init__(self,name,password,language)
          self.address=address
 

@@ -2,6 +2,7 @@
 
 
 def checker(n):
+    ''' Check if a given number is prime or not  and return true if yes '''
     if( n < 2):
         return False
     elif (n == 2 or n == 3):
@@ -11,6 +12,7 @@ def checker(n):
             return False
     return True
 def getPrimes():
+    ''' Return prime number with yield'''
     value = 0
     while True:
         if checker(value):

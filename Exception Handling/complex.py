@@ -1,17 +1,11 @@
-# try:
-#     raise Exception('First','Second')
-# except Exception as a:
-#     print(a)
-#     raise NameError(' LOL you got name error')
-# finally:
-#     print('Close A file')
-
 
 
 class FormulaError(Exception):
+    '''Class FormulaError that inherits Exception class'''
     pass
 
 def checker(user1):
+    '''Check if there are three user input''' 
     user=user1.split()
     if( len(user) !=3):
         raise FormulaError('Input is wrong you idiot.I need three')
@@ -24,6 +18,7 @@ def checker(user1):
     return n1,op,n2
 
 def calculation(a,o,b):
+    '''Calculate two values according to second arguement and return the value'''
     if( o == '+'):
         return a+b
     elif( o == '-'):

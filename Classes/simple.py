@@ -1,4 +1,5 @@
 class MyClass:
+    '''Class Myclass with object variable name and age;and class variable called classvariable''' 
     classvariable=30
     def __init__(self,name,age):
         self.name = name
